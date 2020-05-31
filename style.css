@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  color: #1c2123;
+}
+
+body {
+  background-color: #1c2123;
+}
+
+.cv__container {
+  width: 1024px;
+  min-height: 1332px;
+  position: relative;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3449dc;
+  padding: 50px 70px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 10px;
+    }
+}
+
+.header__image {
+  width: 150px;
+  width: 150px;
+  border-radius: 50%;
+  float: left;
+}
+
+.header__name-container {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.header__name {
+  font-size: 39px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.header__position {
+  font-size: 23px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header__contact-container {
+  width: 22%;
+  display: inline-block;
+  float: right;
+}
+
+.header__contact-el {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.header__contact-el:hover .fas {
+ color: #D35250;
+}
+
+.header__contact-el:hover .header__contact-text  {
+  color: #D35250;
+ }
+
+.fas {
+  width: 20px;
+  vertical-align: top;
+  padding-top: 5px;
+  color: #fff;
+}
+
+.header__contact-text {
+  display: inline-block;
+  width: calc(100% - 25px);
+  font-size: 18px;
+  color: #fff;
+}
+
+.main {
+  background-color: rgb(240, 240, 240);
+  min-height: 1000px;
+  overflow: auto;
+  height: 100%;
+}
+
+.main__first-column {
+  width: 100%;
+  max-width: 358px;
+  float: left;
+  height: 100%;
+  padding: 40px 30px 40px 70px;
+}
+
+.main__second-column {
+  width: calc(100% - 358px);
+  background-color: #f7f7f7;
+  float: left;
+  height: 100%;
+  min-height: 1000px;
+  padding: 40px 70px 40px 20px;
+}
+
+.main__section {
+  padding-bottom: 35px;
+}
+
+.main__title-container {
+  overflow: auto;
+}
+
+.main__logo-container {
+  width: 40px;
+  display: inline-block;
+  float: left;
+}
+
+.main__logo-title {
+  font-size: 16px;
+  color: #fff;
+  background-color: #3449dc;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.main__title {
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  width: calc(100% - 40px);
+  float: left;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.main__text {
+  font-size: 18px;
+}
+
+.fas--interests {
+  color: #3449dc;
+  font-size: 16px;
+  background-color: #fff;
+  border: 7px solid #3449dc;
+  width: 55px;
+  height: 55px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.main__icons-container {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+.main__icon-desc {
+  padding-top: 10px;
+}
+
+.main__text--reference {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.main__text--color {
+  color: #3449dc;
+}
+
+.main__text--bold {
+  font-weight: 600;
+}
+
+.main__reference-container--pd-btm {
+  padding-bottom: 30px;
+}
+
+.main__text--award {
+  padding-bottom: 10px;
+}
+
+.main__projects-container {
+  padding-left: 50px;
+}
+
+.main__project {
+  width: 240px;
+  height: 270px;
+  float: left;
+  margin: 10px;
+}
+
+.main__project:hover {
+  -webkit-box-shadow: 2px 2px 9px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 9px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 9px 5px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+transition: all .3s;
+cursor: pointer;
+}
+
+.main__project-image-container {
+  width: 100%;
+  height: 170px;
+}
+
+.main__project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.main__project-desc {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  padding: 20px 5px;
+}
+
+.main__text--project {
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.cv__footer {
+    height: 70px;
+    width: 100%;
+    padding: 25px 70px;
+    background-color: #3449dc;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__text {
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
